@@ -4,12 +4,19 @@ require "dictionary_lookup/definition"
 
 module DictionaryLookup
   class Pearson
-
+    # Fetches term definitions from Pearson dictionary API
+    #
+    # @param term [String] term to be defined
+    # @return [Array] an array of DictionaryLookup::Definition objects
+    # @raise SocketError if not connected to the internet
     def self.define(term)
-      uri = URI("https://api.pearson.com:443/v2/dictionaries/ldoce5/entries?headword=#{term}")
+      url = "https://api.pearson.com:443/v2/dictionaries/ldoce5/entries?headword=#{term}"
+      uri = URI(URI.escape(url))
+
       response = Net::HTTP.get(uri)
       data = JSON.parse(response)
 
+      # Select definitions that match exactly with the term
       results = data["results"].select{ |d| d["headword"].downcase == term.downcase }
 
       definitions = []

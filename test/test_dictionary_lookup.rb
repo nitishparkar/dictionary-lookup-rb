@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require 'dictionary_lookup'
 
-class DictionaryLookupTest < Minitest::Test
+class DictionaryLookupTest < MiniTest::Test
   def test_valid_input
     results = DictionaryLookup::Base.define("hello")
     assert_instance_of Array, results

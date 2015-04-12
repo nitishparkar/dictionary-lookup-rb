@@ -10,5 +10,6 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/nitishparkar/dictionary-lookup-rb"
   s.license     = "MIT"
 
-  s.add_development_dependency "minitest", "~> 5.3"
+  s.add_development_dependency "rake", "~> 10"
+  s.add_development_dependency "minitest", "~> 5.0"
 end

@@ -1,6 +1,7 @@
 # Dictionary Lookup
 
 [![Gem Version](https://badge.fury.io/rb/dictionary_lookup.svg)](http://badge.fury.io/rb/dictionary_lookup)
+[![Build Status](https://travis-ci.org/nitishparkar/dictionary-lookup-rb.svg?branch=master)](https://travis-ci.org/nitishparkar/dictionary-lookup-rb)
 
 A ruby gem that wraps pearson dictionary API
 

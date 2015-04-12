@@ -9,4 +9,6 @@ Gem::Specification.new do |s|
   s.files       = Dir["{lib}/**/*.rb", "bin/*", "LICENSE", "*.md"]
   s.homepage    = "https://github.com/nitishparkar/dictionary-lookup-rb"
   s.license     = "MIT"
+
+  s.add_development_dependency "minitest", "~> 5.3"
 end

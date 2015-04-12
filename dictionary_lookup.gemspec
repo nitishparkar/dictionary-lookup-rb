@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "dictionary_lookup"
-  s.version     = "0.1.0"
+  s.version     = "0.2.0"
   s.platform    = Gem::Platform::RUBY
   s.date        = "2015-04-05"
   s.summary     = "A ruby gem that wraps pearson dictionary API"
@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/nitishparkar/dictionary-lookup-rb"
   s.license     = "MIT"
 
-  s.required_ruby_version = '>= 1.9.3'
+  s.required_ruby_version = '>= 2.0.0'
 
   s.add_development_dependency "rake", "~> 10"
   s.add_development_dependency "minitest", "~> 5.0"

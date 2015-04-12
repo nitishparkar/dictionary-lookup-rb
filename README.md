@@ -1,5 +1,7 @@
 # Dictionary Lookup
 
+[![Gem Version](https://badge.fury.io/rb/dictionary_lookup.svg)](http://badge.fury.io/rb/dictionary_lookup)
+
 A ruby gem that wraps pearson dictionary API
 
 ## Getting started

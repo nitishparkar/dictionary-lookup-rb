@@ -7,8 +7,8 @@ module DictionaryLookup
     # @param (see Pearson.define)
     # @return (see Pearson.define)
     # @raise (see Pearson.define)
-    def self.define(term)
-      Pearson.define(term)
+    def self.define(term, config={})
+      Pearson.define(term, config)
     end
   end
 end

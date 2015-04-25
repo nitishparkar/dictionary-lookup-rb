@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "dictionary_lookup"
-  s.version     = "0.2.0"
+  s.version     = "0.3.0"
   s.platform    = Gem::Platform::RUBY
   s.date        = "2015-04-05"
   s.summary     = "A ruby gem that wraps pearson dictionary API"

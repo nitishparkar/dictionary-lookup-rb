@@ -26,7 +26,7 @@ module DictionaryLookup
     def self.define(term, config)
       dictionary = get_dictionary(config)
 
-      url = "https://api.pearson.com:443/v2/dictionaries/#{dictionary}/entries?headword=#{term}"
+      url = "https://api.pearson.com/v2/dictionaries/#{dictionary}/entries?headword=#{term}"
       uri = URI(URI.escape(url))
 
       response = Net::HTTP.get(uri)
